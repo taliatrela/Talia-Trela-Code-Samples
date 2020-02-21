@@ -1,7 +1,19 @@
+#     This script simulates retirement savings. It asks the user for their current savings in four broad categories: cash,
+# bank savings, bond investments, and stock investments. They are asked for a starting and ending percentage for each
+# of these broad categories, their current age and their desired retirment age, and the amount that they wish to invest
+# each year. They could also choose to increase the annual giving by a certain percentage. Each year, the portfolio is 
+# balanced in order to keep to the correct percentages.
+#     The files "stocks.txt" and "bonds.txt" were given in order to simulate future returns, and a constant return rate of 
+# 2% was used for bank savings.
+#     The savings in each broad category for each year is saved in a file called "retirementsimulation.txt". Different 
+# retirement plans are plotted for comparisons at the end.
+
+
+
 import matplotlib.pyplot as plt
 
 # I saved the bonds.txt and stocks.txt files in the same directory as this script, so they are part of
-# my project folder. I just didn't include the link to my whole project folder, just this file in GitHub.
+# my project folder. 
 with open("stocks.txt", "r") as myfile:
     stock_list = [float(i) for i in myfile.read().split('\n')]
 
@@ -100,9 +112,7 @@ def make_retirement_plan(current_age, current_total, user_cash, user_savings, us
         user_bonds.amount = bonds_percent * total
         user_stocks.amount = stocks_percent * total
 
-        # Writes plan to file if csv == True.
-        # Patrick gave me the idea to use a boolean to write the information to a file, instead of creating a whole
-        # new function.
+        # Writes plan to file if csv == True
         if csv == True:
             with open("retirementsimulation.txt", "a") as myfile:
                 myfile.write('\n' + ','.join([str(int(age)), str(user_cash.amount), str(user_savings.amount),
