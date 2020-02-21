@@ -1,3 +1,7 @@
+# The following classes are from my professor's GitHub account:
+# https://raw.githubusercontent.com/EricCharnesky/CIS2001-Winter2019/master/Week5/Week5.py
+# We made them together as a class, and he gave us permission to use them for this project.
+
 class MyStack:
 
     def __init__(self):
