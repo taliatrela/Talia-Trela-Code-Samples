@@ -1,3 +1,8 @@
+#   The purpose of this project was to use linked classes and operator overloading. We were to write implementations for 
+# a class of polynomial operations, including addition, multiplication, differentiation, and integration. We also had to
+# make unit tests for each of our methods.
+
+
 class TermNode:
     def __init__(self, exponent, coefficient, next=None):
         self.exponent = exponent
