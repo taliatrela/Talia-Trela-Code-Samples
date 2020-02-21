@@ -1,3 +1,9 @@
+# This script simulates PowerBall, but ignores the PowerPlay options. It allows the user to purchase
+# a certain number of PowerBall tickets. Each time the user plays, it generates a winning ticket, and shows how much the user
+# won, spent, and lost.
+
+# There is also a manual test section at the end that verifies that the correct amount is returned.
+
 import random
 
 
