@@ -1,7 +1,7 @@
 import os
 import math
 from StacksAndQueues import MyStack, CircularQueue
-#  I am using the stack and queue classes that we made in class, so they are from your GitHub Account:
+#  The stack and queue classes were made together as a class, so they are from my professor's GitHub Account:
 #  https://raw.githubusercontent.com/EricCharnesky/CIS2001-Winter2019/master/Week5/Week5.py
 
 
