@@ -1,3 +1,29 @@
+#    The purpose of this project was to use implementations of stacks and queues.
+
+#    In this project, our job was to determine the total time it would take to load materials onto planes and 
+# trains given the order that items are unloaded from a ship. The following parameters were given:
+#           - Materials are stacked up to five items high if they are to be sent by train.
+#           - Materials are placed on an assembly line if they are to be sent by plane.
+#           - Each item is given a plane or train number indicating its destination.
+#           - There is one worker loading trains and one worker loading planes (at the same time).
+#           - The trains/planes closer to the dock have smaller numbers.
+#           - Each worker requires 2 minutes * train number to move an item from the dock to the train and return.
+#           - Each worker required 10 minutes * plane number to move an item from the dock to a plane and return.
+
+#    Input: 
+#           First line:  4 integers containing the number of: trains, planes, total items to be loaded onto trains, 
+#                        total items to be loaded onto planes. Integers separated by a space.
+#           Second line: Number of items to be loaded onto each train (separated by a space).
+#           Third line:  Number of items to be loaded onto each plane (separated by a space).
+#           Fourth line: Integers representing he destination of each item being sent by train (separated by a space).
+#           Fifth line:  Integers representing he destination of each item being sent by plane (separated by a space).
+
+#    Output:
+#           Two lines. The first line contains integers for each train. The ith integer represents the time the ith train 
+#           ﬁnished loading. The second line contains integers for each plane. The ith integer represents the time the 
+#           ith plane ﬁnished loading.
+
+
 import os
 import math
 from StacksAndQueues import MyStack, CircularQueue
