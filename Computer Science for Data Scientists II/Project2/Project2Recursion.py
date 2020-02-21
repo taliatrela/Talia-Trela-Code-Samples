@@ -1,3 +1,10 @@
+#     This project was called 'Checkered Future'. It finds the maximum number of jumps a king checker can make in one turn. 
+# Its input contains multiple test cases. The first line of the input contains the number of test cases for that file. The 
+# next line then specifies the number of your pieces and the number of your opponent's pieces (m, n) separated by a space. 
+# The next m lines contain two integers indicating the row and column of your pieces, separated by a space. The first piece
+# is the king. The n lines after that represent the row and column of your opponent's pieces, again separated by a space. 
+# For each test case, the output displays the max number of jumps the king can make. 
+
 class Board:
     RED = 'R'
     WHITE = 'W'
